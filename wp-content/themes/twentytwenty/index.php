@@ -72,7 +72,11 @@ get_header();
 				<?php if ($archive_subtitle) { ?>
 					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
 				<?php } ?>
-				<div class="no-search-results-form section-inner thing">
+			</div><!-- .no-search-results -->
+			</div><!-- .archive-header-inner -->
+
+		</header><!-- .archive-header -->
+		<div class="no-search-results-form section-inner thing">
 
 			<?php
 			?>
@@ -83,14 +87,8 @@ get_header();
 					<div class="cot col3"><button class="btn-kiem" type="submit">Search</button></div>
 				</div>
 			</form>
-
-		</div><!-- .no-search-results -->
-
-			</div><!-- .archive-header-inner -->
-
-		</header><!-- .archive-header -->
-
-	<?php
+			<br>
+		<?php
 	}
 
 	if (have_posts()) {
@@ -107,27 +105,25 @@ get_header();
 			get_template_part('template-parts/content', get_post_type());
 		}
 	} elseif (is_search()) {
-	?>
+		?>
 
-		<div class="no-search-results-form section-inner thing">
+			<div class="no-search-results-form section-inner thin">
 
-			<?php
-			?>
-			<form action="http://wordpress.local/?s=">
-				<div class="go_search">
-					<div class="cot col1"><i class="fa fa-search"></i></div>
-					<div class="cot col2"><input class="form-control formS" name="s" id="s" placeholder="Search topics or keywords" type="search"></div>
-					<div class="cot col3"><button class="btn-kiem" type="submit">Search</button></div>
-				</div>
-			</form>
+				<?php
+				// get_search_form(
+				// 	array(
+				// 		'aria_label' => __('search again', 'twentytwenty'),
+				// 	)
+				// );
+				?>
 
-		</div><!-- .no-search-results -->
+			</div><!-- .no-search-results -->
 
-	<?php
+		<?php
 	}
-	?>
+		?>
 
-	<?php get_template_part('template-parts/pagination'); ?>
+		<?php get_template_part('template-parts/pagination'); ?>
 
 </main><!-- #site-content -->
 
