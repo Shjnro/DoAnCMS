@@ -85,10 +85,18 @@ get_header();
 		$i = 0;
 
 		while (have_posts()) {
+<<<<<<< HEAD
+=======
+			$i++;
+			if ($i > 1) {
+				echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
+			}
+>>>>>>> origin/1-wordpress-611-202309/2-groups/1-C/2-15-Thai
 			the_post();
 			// Get posts:
 			$_post = get_post();
 
+<<<<<<< HEAD
 			// Get post title:
 			$post_title = $_post->post_title;
 
@@ -156,9 +164,16 @@ get_header();
 		}
 	} elseif (is_search()) {
 	?>
+=======
+			get_template_part('template-parts/content', get_post_type());
+		}
+	} elseif (is_search()) {
+		?>
+>>>>>>> origin/1-wordpress-611-202309/2-groups/1-C/2-15-Thai
 
-		<div class="no-search-results-form section-inner thin">
+			<div class="no-search-results-form section-inner thin">
 
+<<<<<<< HEAD
 			<?php
 			get_search_form(
 				array(
@@ -166,14 +181,27 @@ get_header();
 				)
 			);
 			?>
+=======
+				<?php
+				// get_search_form(
+				// 	array(
+				// 		'aria_label' => __('search again', 'twentytwenty'),
+				// 	)
+				// );
+				?>
+>>>>>>> origin/1-wordpress-611-202309/2-groups/1-C/2-15-Thai
 
-		</div><!-- .no-search-results -->
+			</div><!-- .no-search-results -->
 
 	<?php
 	}
-	?>
+		?>
 
+<<<<<<< HEAD
 	<?php get_template_part('template-parts/pagination'); ?>
+=======
+		<?php get_template_part('template-parts/pagination'); ?>
+>>>>>>> origin/1-wordpress-611-202309/2-groups/1-C/2-15-Thai
 
 </main><!-- #site-content -->
 
