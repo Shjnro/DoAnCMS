@@ -31,7 +31,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module5.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module6.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>./module6.css" type="text/css" media="screen" />
 	
 	<!-- End Link is Header Moudel 1 -->
 </head>
