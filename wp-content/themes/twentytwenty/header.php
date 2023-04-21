@@ -29,6 +29,10 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module5.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module6.css" type="text/css" media="screen" />
+	
 	<!-- End Link is Header Moudel 1 -->
 </head>
 
@@ -60,10 +64,10 @@
 					</ul>
 					<form action="http://wordpress.local/" class="navbar-form navbar-left thing">
 						<div class="go_search">
-					<div class="cot col1"><i class="fa fa-search"></i></div>
-					<div class="cot col2"><input class="form-control formS" name="s" id="s" placeholder="Search topics or keywords" type="search"></div>
-					<div class="cot col3"><button class="btn-kiem" type="submit">Search</button></div>
-				</div>
+							<div class="cot col1"><i class="fa fa-search"></i></div>
+							<div class="cot col2"><input class="form-control formS" name="s" id="s" placeholder="Search topics or keywords" type="search"></div>
+							<div class="cot col3"><button class="btn-kiem" type="submit">Search</button></div>
+						</div>
 					</form>
 					<ul class="nav navbar-nav navbar-right">
 						<?php
@@ -82,8 +86,7 @@
 							<a href="#" class="center-text">
 								<div class="toggle-wrapper search-toggle-wrapper">
 									<!-- This is btn search -->
-									<button class="toggle desktop-search-toggle" data-toggle-target=".search-modal" 
-									data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+									<button class="toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
 										<span class="toggle-inner tranY">
 											<?php twentytwenty_the_theme_svg('search'); ?>
 											<span class="toggle-text">
