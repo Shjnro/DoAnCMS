@@ -58,11 +58,12 @@
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
 					</ul>
-					<form action="http://wordpress.local/" class="navbar-form navbar-left">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search" name="s">
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
+					<form action="http://wordpress.local/" class="navbar-form navbar-left thing">
+						<div class="go_search">
+					<div class="cot col1"><i class="fa fa-search"></i></div>
+					<div class="cot col2"><input class="form-control formS" name="s" id="s" placeholder="Search topics or keywords" type="search"></div>
+					<div class="cot col3"><button class="btn-kiem" type="submit">Search</button></div>
+				</div>
 					</form>
 					<ul class="nav navbar-nav navbar-right">
 						<?php
